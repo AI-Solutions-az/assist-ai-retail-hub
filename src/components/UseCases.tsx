@@ -22,7 +22,7 @@ const UseCases = () => {
           <TabsList className="grid grid-cols-3 mb-8">
             <TabsTrigger value="retail" className="text-sm md:text-base">
               <ShoppingBag className="mr-2 h-4 w-4" /> 
-              <span className="hidden sm:inline">Магазины</span> одежды
+              <span className="hidden sm:inline">Магазины одежды</span>
             </TabsTrigger>
             <TabsTrigger value="realestate" className="text-sm md:text-base">
               <Building className="mr-2 h-4 w-4" /> 
