@@ -32,18 +32,6 @@ const Footer = () => {
                   info@aisol.az
                 </a>
               </li>
-              <li className="flex items-center">
-                <Phone className="h-5 w-5 text-primary mr-3" />
-                <a href="tel:+10000000000" className="text-muted-foreground hover:text-primary">
-                  +7 (000) 000-0000
-                </a>
-              </li>
-              <li className="flex items-center">
-                <MessageSquare className="h-5 w-5 text-primary mr-3" />
-                <a href="#" className="text-muted-foreground hover:text-primary">
-                  Живой чат
-                </a>
-              </li>
             </ul>
           </div>
         </div>
