@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-gradient">AIvito Assistant</h3>
+            <h3 className="text-xl font-bold mb-4 text-gradient">AIvito Ассистент</h3>
             <p className="text-muted-foreground mb-4">
-              AI-powered customer service for businesses on Avito and other marketplaces.
+              ИИ-ассистент для клиентского сервиса на Avito и других маркетплейсах.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary">
@@ -41,27 +41,27 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Product</h3>
+            <h3 className="text-lg font-semibold mb-4">Продукт</h3>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-muted-foreground hover:text-primary">Features</a></li>
-              <li><a href="#use-cases" className="text-muted-foreground hover:text-primary">Use Cases</a></li>
-              <li><a href="#integration" className="text-muted-foreground hover:text-primary">Integration</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary">Pricing</a></li>
+              <li><a href="#features" className="text-muted-foreground hover:text-primary">Возможности</a></li>
+              <li><a href="#use-cases" className="text-muted-foreground hover:text-primary">Применение</a></li>
+              <li><a href="#integration" className="text-muted-foreground hover:text-primary">Интеграция</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary">Цены</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Resources</h3>
+            <h3 className="text-lg font-semibold mb-4">Ресурсы</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-muted-foreground hover:text-primary">Documentation</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary">API Reference</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary">Blog</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary">Community</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary">Документация</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary">API-справочник</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary">Блог</a></li>
+              <li><a href="#" className="text-muted-foreground hover:text-primary">Сообщество</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4">Контакты</h3>
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3" />
@@ -72,13 +72,13 @@ const Footer = () => {
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3" />
                 <a href="tel:+10000000000" className="text-muted-foreground hover:text-primary">
-                  +1 (000) 000-0000
+                  +7 (000) 000-0000
                 </a>
               </li>
               <li className="flex items-center">
                 <MessageSquare className="h-5 w-5 text-primary mr-3" />
                 <a href="#" className="text-muted-foreground hover:text-primary">
-                  Live Chat
+                  Живой чат
                 </a>
               </li>
             </ul>
@@ -88,12 +88,12 @@ const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-              © 2025 AIvito Assistant. All rights reserved.
+              © 2025 AIvito Ассистент. Все права защищены.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-primary">Terms of Service</a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-primary">Cookie Policy</a>
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary">Политика конфиденциальности</a>
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary">Условия использования</a>
+              <a href="#" className="text-sm text-muted-foreground hover:text-primary">Политика cookie</a>
             </div>
           </div>
         </div>

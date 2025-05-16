@@ -11,10 +11,10 @@ const UseCases = () => {
       <div className="container">
         <AnimatedContainer className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Perfect for <span className="text-gradient">Various</span> Industries
+            Идеально для <span className="text-gradient">различных</span> отраслей
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our AI Assistant adapts to different business needs, providing specialized support for various industries.
+            Наш ИИ-ассистент адаптируется к различным бизнес-потребностям, предоставляя специализированную поддержку для разных отраслей.
           </p>
         </AnimatedContainer>
         
@@ -22,15 +22,15 @@ const UseCases = () => {
           <TabsList className="grid grid-cols-3 mb-8">
             <TabsTrigger value="retail" className="text-sm md:text-base">
               <ShoppingBag className="mr-2 h-4 w-4" /> 
-              <span className="hidden sm:inline">Clothing</span> Retail
+              <span className="hidden sm:inline">Магазины</span> одежды
             </TabsTrigger>
             <TabsTrigger value="realestate" className="text-sm md:text-base">
               <Building className="mr-2 h-4 w-4" /> 
-              Real Estate
+              Недвижимость
             </TabsTrigger>
             <TabsTrigger value="marketplace" className="text-sm md:text-base">
               <Home className="mr-2 h-4 w-4" /> 
-              Marketplaces
+              Маркетплейсы
             </TabsTrigger>
           </TabsList>
           
@@ -38,15 +38,15 @@ const UseCases = () => {
             <AnimatedContainer animation="fade-in">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Clothing & Retail Stores</h3>
+                  <h3 className="text-2xl font-bold mb-4">Магазины одежды</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start">
                       <div className="mr-3 bg-primary/10 rounded-full p-1 mt-1">
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Size and Fit Guidance</p>
-                        <p className="text-muted-foreground">Help customers find their perfect size and fit based on measurements or previous purchases.</p>
+                        <p className="font-medium">Подбор размера и посадки</p>
+                        <p className="text-muted-foreground">Помощь клиентам в выборе идеального размера на основе замеров или предыдущих покупок.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -54,8 +54,8 @@ const UseCases = () => {
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Product Recommendations</p>
-                        <p className="text-muted-foreground">Suggest complementary items and accessories to increase average order value.</p>
+                        <p className="font-medium">Рекомендации товаров</p>
+                        <p className="text-muted-foreground">Предложение дополнительных товаров и аксессуаров для увеличения средней стоимости заказа.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -63,28 +63,28 @@ const UseCases = () => {
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Order Status Updates</p>
-                        <p className="text-muted-foreground">Provide real-time information about order processing, shipping, and delivery.</p>
+                        <p className="font-medium">Информация о статусе заказа</p>
+                        <p className="text-muted-foreground">Предоставление актуальной информации о обработке заказа, доставке и получении.</p>
                       </div>
                     </li>
                   </ul>
                   <Button className="mt-6 hover-scale">
-                    Retail Solution
+                    Решение для ритейла
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
                 <div className="bg-primary/5 rounded-xl p-6 shadow-inner">
                   <div className="bg-white dark:bg-zinc-900 rounded-lg p-5 shadow-sm">
-                    <p className="text-sm font-medium mb-3">Customer Conversation Example:</p>
+                    <p className="text-sm font-medium mb-3">Пример диалога с клиентом:</p>
                     <div className="space-y-3 text-sm">
                       <div className="bg-muted/50 p-3 rounded-lg max-w-[80%]">
-                        <p>Do you have this sweater in navy blue in size medium?</p>
+                        <p>У вас есть этот свитер в темно-синем цвете размера M?</p>
                       </div>
                       <div className="bg-primary/10 p-3 rounded-lg ml-auto max-w-[80%]">
-                        <p>Yes! We have the navy blue sweater in size medium. Based on your previous orders, this should fit you well. Would you like me to add it to your cart?</p>
+                        <p>Да! У нас есть темно-синий свитер размера M. Судя по вашим предыдущим заказам, этот размер должен вам подойти. Хотите добавить его в корзину?</p>
                       </div>
                       <div className="bg-muted/50 p-3 rounded-lg max-w-[80%]">
-                        <p>Great! Yes, please add it. What would you recommend to wear with it?</p>
+                        <p>Отлично! Да, добавьте. Что бы вы рекомендовали носить с ним?</p>
                       </div>
                     </div>
                   </div>
@@ -97,15 +97,15 @@ const UseCases = () => {
             <AnimatedContainer animation="fade-in">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Real Estate Agencies</h3>
+                  <h3 className="text-2xl font-bold mb-4">Агентства недвижимости</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start">
                       <div className="mr-3 bg-primary/10 rounded-full p-1 mt-1">
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Property Matching</p>
-                        <p className="text-muted-foreground">Help clients find properties that match their specific requirements and budget.</p>
+                        <p className="font-medium">Подбор объектов</p>
+                        <p className="text-muted-foreground">Помощь клиентам в поиске объектов недвижимости, соответствующих их требованиям и бюджету.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -113,8 +113,8 @@ const UseCases = () => {
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Viewing Scheduling</p>
-                        <p className="text-muted-foreground">Schedule property viewings and coordinate with agents automatically.</p>
+                        <p className="font-medium">Запись на просмотр</p>
+                        <p className="text-muted-foreground">Автоматическое планирование просмотров объектов и координация с агентами.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -122,28 +122,28 @@ const UseCases = () => {
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Market Information</p>
-                        <p className="text-muted-foreground">Provide insights about neighborhoods, pricing trends, and local amenities.</p>
+                        <p className="font-medium">Информация о рынке</p>
+                        <p className="text-muted-foreground">Предоставление сведений о районах, ценовых тенденциях и инфраструктуре.</p>
                       </div>
                     </li>
                   </ul>
                   <Button className="mt-6 hover-scale">
-                    Real Estate Solution
+                    Решение для недвижимости
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
                 <div className="bg-primary/5 rounded-xl p-6 shadow-inner">
                   <div className="bg-white dark:bg-zinc-900 rounded-lg p-5 shadow-sm">
-                    <p className="text-sm font-medium mb-3">Customer Conversation Example:</p>
+                    <p className="text-sm font-medium mb-3">Пример диалога с клиентом:</p>
                     <div className="space-y-3 text-sm">
                       <div className="bg-muted/50 p-3 rounded-lg max-w-[80%]">
-                        <p>I'm looking for a 2-bedroom apartment with parking near downtown, budget around $1,500/month.</p>
+                        <p>Ищу двухкомнатную квартиру с парковкой рядом с центром, бюджет около 90 000 руб/месяц.</p>
                       </div>
                       <div className="bg-primary/10 p-3 rounded-lg ml-auto max-w-[80%]">
-                        <p>I found 5 apartments that match your criteria! All have 2 bedrooms, are within 2 miles of downtown, include parking, and range from $1,350-$1,600/month. Would you like to see photos of these properties?</p>
+                        <p>Я нашел 5 квартир, соответствующих вашим критериям! Все имеют 2 комнаты, находятся в пределах 2 км от центра, включают парковку, и стоят от 85 000 до 95 000 руб/месяц. Хотите посмотреть фотографии этих объектов?</p>
                       </div>
                       <div className="bg-muted/50 p-3 rounded-lg max-w-[80%]">
-                        <p>Yes, please! And could I schedule viewings for this weekend?</p>
+                        <p>Да, пожалуйста! И можно ли запланировать просмотры на эти выходные?</p>
                       </div>
                     </div>
                   </div>
@@ -156,15 +156,15 @@ const UseCases = () => {
             <AnimatedContainer animation="fade-in">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
-                  <h3 className="text-2xl font-bold mb-4">Avito & Marketplaces</h3>
+                  <h3 className="text-2xl font-bold mb-4">Avito и маркетплейсы</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start">
                       <div className="mr-3 bg-primary/10 rounded-full p-1 mt-1">
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Listing Management</p>
-                        <p className="text-muted-foreground">Create, update and manage marketplace listings through natural conversations.</p>
+                        <p className="font-medium">Управление объявлениями</p>
+                        <p className="text-muted-foreground">Создание, обновление и управление объявлениями на маркетплейсе через простые диалоги.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -172,8 +172,8 @@ const UseCases = () => {
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Buyer-Seller Communication</p>
-                        <p className="text-muted-foreground">Facilitate smooth communication between buyers and sellers with automated responses.</p>
+                        <p className="font-medium">Коммуникация покупатель-продавец</p>
+                        <p className="text-muted-foreground">Обеспечение эффективного общения между покупателями и продавцами с автоматическими ответами.</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -181,28 +181,28 @@ const UseCases = () => {
                         <ArrowRight className="h-4 w-4 text-primary" />
                       </div>
                       <div>
-                        <p className="font-medium">Transaction Support</p>
-                        <p className="text-muted-foreground">Guide users through secure payment processes and logistics arrangements.</p>
+                        <p className="font-medium">Поддержка транзакций</p>
+                        <p className="text-muted-foreground">Сопровождение пользователей в процессах безопасных платежей и логистических решений.</p>
                       </div>
                     </li>
                   </ul>
                   <Button className="mt-6 hover-scale">
-                    Marketplace Solution
+                    Решение для маркетплейсов
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>
                 <div className="bg-primary/5 rounded-xl p-6 shadow-inner">
                   <div className="bg-white dark:bg-zinc-900 rounded-lg p-5 shadow-sm">
-                    <p className="text-sm font-medium mb-3">Customer Conversation Example:</p>
+                    <p className="text-sm font-medium mb-3">Пример диалога с клиентом:</p>
                     <div className="space-y-3 text-sm">
                       <div className="bg-muted/50 p-3 rounded-lg max-w-[80%]">
-                        <p>Is this iPhone still available? What's the lowest price you can offer?</p>
+                        <p>Этот iPhone ещё доступен? Какую скидку можете предложить?</p>
                       </div>
                       <div className="bg-primary/10 p-3 rounded-lg ml-auto max-w-[80%]">
-                        <p>Yes, the iPhone 13 Pro (128GB) is still available! The seller's listed price is $650, but they're willing to consider reasonable offers. The phone is in excellent condition with 90% battery health. Are you interested in making an offer?</p>
+                        <p>Да, iPhone 13 Pro (128GB) ещё доступен! Указанная цена продавца 50 000 руб., но он готов рассмотреть разумные предложения. Телефон в отличном состоянии с 90% ресурса батареи. Хотите сделать предложение?</p>
                       </div>
                       <div className="bg-muted/50 p-3 rounded-lg max-w-[80%]">
-                        <p>Would they accept $600? And can I pick it up tomorrow?</p>
+                        <p>Примет ли он 45 000 руб.? И можно забрать завтра?</p>
                       </div>
                     </div>
                   </div>
