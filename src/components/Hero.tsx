@@ -17,7 +17,7 @@ const Hero = () => {
               <span className="animate-pulse-subtle mr-2">●</span> AI-помощник для клиентского сервиса
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Интеллектуальный <span className="text-gradient">ИИ-ассистент</span> для вашего бизнеса
+              <span className="text-gradient">ИИ-ассистент</span> для вашего бизнеса
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-md">
               Автоматизируйте поддержку клиентов с помощью ИИ-ассистента, который понимает ваш бизнес и легко интегрируется с Avito и другими площадками.
