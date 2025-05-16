@@ -1,45 +1,44 @@
 
 import React from 'react';
 import AnimatedContainer from './AnimatedContainer';
-import { MessageSquare, Users, Globe, Zap, ArrowRight, Shield } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessageSquare, Users, Globe, Zap, Shield } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
     icon: <MessageSquare className="h-10 w-10 text-primary" />,
-    title: 'Natural Conversations',
-    description: 'Engages with customers in human-like conversations, understanding context and nuance.',
+    title: 'Естественное общение',
+    description: 'Общается с клиентами как человек, понимая контекст и нюансы разговора.',
     delay: 0
   },
   {
     icon: <Zap className="h-10 w-10 text-primary" />,
-    title: 'Instant Responses',
-    description: 'Provides immediate answers 24/7, eliminating wait times for your customers.',
+    title: 'Мгновенные ответы',
+    description: 'Предоставляет немедленные ответы 24/7, устраняя время ожидания для ваших клиентов.',
     delay: 150
   },
   {
     icon: <Shield className="h-10 w-10 text-primary" />,
-    title: 'Knowledge Base',
-    description: 'Leverages your custom knowledge base to provide accurate, on-brand information.',
+    title: 'База знаний',
+    description: 'Использует вашу собственную базу знаний для предоставления точной информации в соответствии с брендом.',
     delay: 300
   },
   {
     icon: <Users className="h-10 w-10 text-primary" />,
-    title: 'Human Handoff',
-    description: 'Knows when to escalate complex issues to your human team members seamlessly.',
+    title: 'Переключение на человека',
+    description: 'Знает, когда следует передать сложные вопросы вашим сотрудникам.',
     delay: 0
   },
   {
     icon: <Globe className="h-10 w-10 text-primary" />,
-    title: 'Avito Integration',
-    description: 'Seamlessly connects with Avito and other marketplaces for unified customer service.',
+    title: 'Интеграция с Avito',
+    description: 'Легко подключается к Avito и другим маркетплейсам для унифицированного обслуживания клиентов.',
     delay: 150
   },
   {
-    icon: <ArrowRight className="h-10 w-10 text-primary" />,
-    title: 'Conversion Focused',
-    description: 'Designed to guide customers through the purchase journey and increase conversions.',
+    icon: <Zap className="h-10 w-10 text-primary" />,
+    title: 'Ориентирован на конверсии',
+    description: 'Разработан для сопровождения клиентов по пути покупки и увеличения конверсий.',
     delay: 300
   }
 ];
@@ -50,10 +49,10 @@ const Features = () => {
       <div className="container">
         <AnimatedContainer className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Powerful Features to <span className="text-gradient">Transform</span> Your Customer Service
+            Мощные функции для <span className="text-gradient">трансформации</span> вашего клиентского сервиса
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our AI Assistant brings cutting-edge technology to help you connect with customers, answer questions instantly, and boost sales.
+            Наш ИИ-ассистент предлагает передовые технологии, чтобы помочь вам связаться с клиентами, мгновенно отвечать на вопросы и увеличивать продажи.
           </p>
         </AnimatedContainer>
         
@@ -81,12 +80,6 @@ const Features = () => {
             </AnimatedContainer>
           ))}
         </div>
-        
-        <AnimatedContainer className="text-center mt-16">
-          <Button size="lg" className="hover-scale">
-            Explore All Features <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </AnimatedContainer>
       </div>
     </section>
   );

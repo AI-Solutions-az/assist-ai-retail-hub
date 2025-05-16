@@ -2,27 +2,30 @@
 import React from 'react';
 import AnimatedContainer from './AnimatedContainer';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CheckSquare } from 'lucide-react';
+import { CheckSquare } from 'lucide-react';
+import { useContactModal } from '../hooks/useContactModal';
 
 const integrationSteps = [
-  "Create your account and configure your knowledge base",
-  "Connect your Avito store or marketplace with our simple API",
-  "Customize the assistant's personality and responses",
-  "Test the integration with sample customer queries",
-  "Go live and let the AI handle customer inquiries"
+  "Создайте свой аккаунт и настройте базу знаний",
+  "Подключите свой магазин на Avito или маркетплейс через наш простой API",
+  "Настройте индивидуальность и ответы ассистента",
+  "Протестируйте интеграцию на примерах запросов клиентов",
+  "Запустите и позвольте ИИ обрабатывать запросы клиентов"
 ];
 
 const Integration = () => {
+  const { openModal } = useContactModal();
+
   return (
     <section id="integration" className="section-padding bg-gradient-to-b from-white to-secondary/30 dark:from-background dark:to-background">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <AnimatedContainer>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Seamless <span className="text-gradient">Integration</span> with Avito and Marketplaces
+              Безупречная <span className="text-gradient">интеграция</span> с Avito и маркетплейсами
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Our AI Assistant works perfectly with Avito and other marketplaces, providing a unified customer service experience across all platforms.
+              Наш ИИ-ассистент идеально работает с Avito и другими маркетплейсами, обеспечивая единый опыт обслуживания клиентов на всех платформах.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -37,11 +40,8 @@ const Integration = () => {
             </div>
             
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="hover-scale">
-                Start Integration <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="lg" className="hover-scale">
-                View Documentation
+              <Button size="lg" className="hover-scale" onClick={openModal}>
+                Начать интеграцию
               </Button>
             </div>
           </AnimatedContainer>
@@ -57,7 +57,7 @@ const Integration = () => {
               
               <div className="space-y-4 text-sm">
                 <div className="bg-muted/80 rounded p-3">
-                  <span className="text-primary font-mono"># Initialize the AI Assistant</span>
+                  <span className="text-primary font-mono"># Инициализация ИИ-ассистента</span>
                   <pre className="mt-2 overflow-x-auto"><code>{`import AIAssistant from 'aivito-assistant'
 
 const assistant = new AIAssistant({
@@ -68,7 +68,7 @@ const assistant = new AIAssistant({
                 </div>
                 
                 <div className="bg-muted/80 rounded p-3">
-                  <span className="text-primary font-mono"># Connect to Avito Marketplace</span>
+                  <span className="text-primary font-mono"># Подключение к Avito Маркетплейс</span>
                   <pre className="mt-2 overflow-x-auto"><code>{`await assistant.connect({
   platform: 'avito',
   credentials: {
@@ -82,9 +82,9 @@ const assistant = new AIAssistant({
                 </div>
                 
                 <div className="bg-muted/80 rounded p-3">
-                  <span className="text-primary font-mono"># Handle customer messages</span>
+                  <span className="text-primary font-mono"># Обработка сообщений клиентов</span>
                   <pre className="mt-2 overflow-x-auto"><code>{`assistant.on('message', async (message) => {
-  // AI processes message automatically
+  // ИИ автоматически обрабатывает сообщение
   if (message.needsHumanAttention) {
     await assistant.escalateToHuman(message)
   }
@@ -95,7 +95,7 @@ const assistant = new AIAssistant({
               <div className="mt-6 p-3 bg-primary/10 rounded-lg border border-primary/20">
                 <p className="text-sm font-medium flex items-center">
                   <CheckSquare className="h-4 w-4 mr-2 text-primary" />
-                  Integration ready to handle customer queries!
+                  Интеграция готова к обработке запросов клиентов!
                 </p>
               </div>
             </div>

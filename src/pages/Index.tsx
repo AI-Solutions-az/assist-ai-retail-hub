@@ -7,6 +7,7 @@ import UseCases from '../components/UseCases';
 import Integration from '../components/Integration';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
+import ContactModal from '../components/ContactModal';
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Integration />
       <CTA />
       <Footer />
+      <ContactModal />
     </div>
   );
 };

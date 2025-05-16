@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { useContactModal } from '../hooks/useContactModal';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { openModal } = useContactModal();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,18 +24,18 @@ const Header = () => {
     }`}>
       <div className="container flex items-center justify-between h-16 md:h-20">
         <div className="flex items-center">
-          <a href="/" className="text-xl font-bold text-gradient">AIvito Assistant</a>
+          <a href="/" className="text-xl font-bold text-gradient">AIvito Ассистент</a>
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">Features</a>
-          <a href="#use-cases" className="text-sm font-medium hover:text-primary transition-colors">Use Cases</a>
-          <a href="#integration" className="text-sm font-medium hover:text-primary transition-colors">Integration</a>
-          <Button asChild variant="ghost" className="hover-scale">
-            <a href="#contact">Contact</a>
+          <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">Возможности</a>
+          <a href="#use-cases" className="text-sm font-medium hover:text-primary transition-colors">Применение</a>
+          <a href="#integration" className="text-sm font-medium hover:text-primary transition-colors">Интеграция</a>
+          <Button asChild variant="ghost" className="hover-scale" onClick={openModal}>
+            <span>Связаться</span>
           </Button>
-          <Button asChild className="hover-scale">
-            <a href="#get-started">Get Started</a>
+          <Button asChild className="hover-scale" onClick={openModal}>
+            <span>Начать</span>
           </Button>
         </nav>
 
@@ -50,31 +52,27 @@ const Header = () => {
               className="py-2 text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Features
+              Возможности
             </a>
             <a 
               href="#use-cases" 
               className="py-2 text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Use Cases
+              Применение
             </a>
             <a 
               href="#integration" 
               className="py-2 text-sm font-medium hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Integration
+              Интеграция
             </a>
-            <a 
-              href="#contact" 
-              className="py-2 text-sm font-medium hover:text-primary transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Contact
-            </a>
-            <Button asChild className="w-full">
-              <a href="#get-started" onClick={() => setMobileMenuOpen(false)}>Get Started</a>
+            <Button className="w-full" onClick={() => {
+              setMobileMenuOpen(false);
+              openModal();
+            }}>
+              Начать
             </Button>
           </div>
         </div>
