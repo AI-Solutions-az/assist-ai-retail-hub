@@ -32,21 +32,23 @@ const ContactModal = () => {
     try {
       setIsSubmitting(true);
       
-      // Replace TOKEN with your actual token when implementing
-      const response = await fetch(`https://api.telegram.org/botTOKEN/sendMessage`, {
-        method: 'POST',
+      // Send data to email service (can be replaced with a proper email API)
+      const response = await fetch("https://formsubmit.co/ajax/info@aisol.az", {
+        method: "POST",
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify({
-          chat_id: '-1001234567890', // Replace with your chat ID
-          parse_mode: 'HTML',
-          text: `<b>Новая заявка с сайта:</b>\n\n<b>Имя:</b> ${name}\n<b>Email:</b> ${email}\n<b>Телефон:</b> ${phone}`,
+          name: name,
+          email: email,
+          phone: phone,
+          _subject: "Новая заявка с сайта AISOL",
         }),
       });
       
       if (!response.ok) {
-        throw new Error('Не удалось отправить сообщение в Telegram');
+        throw new Error('Не удалось отправить заявку');
       }
       
       toast.success("Спасибо! Мы свяжемся с вами в ближайшее время.");
@@ -56,7 +58,7 @@ const ContactModal = () => {
       setPhone('');
       
     } catch (error) {
-      console.error('Error sending message to Telegram:', error);
+      console.error('Error sending form:', error);
       toast.error("Произошла ошибка. Пожалуйста, попробуйте еще раз позже.");
     } finally {
       setIsSubmitting(false);
